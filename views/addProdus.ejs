@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %>
+<div class="container-fluid mt-5">
+    <h1 class="text-center">Adaugă Produs</h1>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+    
+            <form action="/produs" method="POST"  novalidate class="validated-form">
+                <label class="fs-5" for="nume">Denumire</label>
+                <div class="input-group mb-3">
+                    <input type="text" name="produs[nume]" id="nume" class="form-control" placeholder="Denumire Produs"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <label class="fs-5" for="um">UM</label>
+                <div class="input-group mb-3">
+                    <input type="text" name="produs[um]" id="um" class="form-control" placeholder="Unitate de masură"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <label class="fs-5" for="pret">Preț</label>
+                <div class="input-group mb-3">
+                    <input type="text" name="produs[pret]" id="pret" class="form-control"  placeholder="Pret"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <label class="fs-5" for="departament">Departament</label>
+                <div class="input-group mb-3">
+                    <select class="form-select" name="produs[departament]" aria-label="Default select example"
+                     placeholder="departament" required>
+                        <option value="1">Marfuri</option>
+                        <option value="2" selected>Preparate</option>
+                        <option value="3">Servicii</option>
+                        <option value="4">Tips</option>
+                      </select>
+                </div>
+
+                <button class="btn btn-lg btn-info">Adaugă</button>
+            </form>
+        </div>
+
+    </div>
+    </div>

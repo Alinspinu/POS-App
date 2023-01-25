@@ -1,0 +1,99 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="row-total">
+    <div class="raport-wrapper">
+        <div class="x">
+            <span style="font-size:20px; margin-left:3px;">raport</span>
+            <span style="font-size:30px;">X</span>
+        </div>
+        <div class="z">
+            <span style="font-size:20px; margin-left:3px;">raport</span>
+            <span style="font-size:30px;">Z</span>
+        </div>
+    </div>
+<div class="nav-total-wrapper ms-auto">
+    <!-- <div class="reset nav-metoda">Reset</div> -->
+    <div class="nav-metoda">
+        <span style="font-size:20px; margin-left:3px;">Num</span>
+        <span class="nav-cash" style="font-size:40px;">0</span>
+    </div>
+    <div class="nav-metoda">
+        <span style="font-size:20px; margin-left:3px;">Card</span>
+        <span class="nav-card" style="font-size:40px;">0</span>
+    </div>
+    <div class="nav-total">
+        <span style="font-size:25px; margin-left:3px;">Total</span>
+        <span class="card-cash" style="font-size:50px;">0</span>
+    </div>
+  </div>
+  
+</div>
+    <div class="row contix">
+        <div class="cont col-lg-5" id="search">
+            <div class="wrapper">
+                <div class="search-input">
+                    <input type="text" placeholder="Search here...">
+                    <div class="autocom-box">
+                    </div>
+                    <div class="icon"><i class="bi bi-search"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7" style="padding:0 0;">
+            <div class="row header mb-4">
+                <span class="col-lg-5">Produs</span>
+                <span class="col-lg-3">Pret</span>
+                <span class="col-lg-4">Cantitate</span>
+            </div>
+            <div class="bill">
+               
+            </div>
+            <hr>
+            <div class="row reducere mx-1">
+                <span class="col-lg-7">Reducere</span>
+                <input type="text" class="col-lg-2 redImp">
+                <span class="col-lg-1">lei</span>
+            </div>
+            <hr>
+            <div class="row total mx-1">
+                <span class="col-lg-5">TOTAL</span>
+                <span class="col-lg-3" id="total">40 lei</span>
+                <button type="button" class="col-lg-2 btn-lg btn btn-info nto" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Notă
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="total-modal-row">
+                                    <span>Total</span>
+                                    <span class="modal-pret">...</span>
+                                    <span class="ms-2">lei</span>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body">
+                                    <div class="plata">
+                                        <span class="btn btn-info cash">Numerar</span>
+                                        <input type="text" name="cash" id="cash">
+                                        <hr>
+                                        <span class="btn btn-info car">Card</span>
+                                        <input type="text" name="card" id="card">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-lg btn-info nota" data-bs-dismiss="modal">Notă</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/search.js"></script>

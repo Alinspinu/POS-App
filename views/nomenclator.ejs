@@ -1,0 +1,18 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="cont col-lg-10 offset-lg-1 mt-5">
+    <div class="wrap">
+        <div class="search-input">
+            <input type="text" id="cauta" placeholder="Search here...">
+            <div class="nomenclator">
+                
+                <% produse.forEach(function(el){ %>
+                <li><a href='/modifica/<%=el._id%>'><%=el.nume%></a></li>  
+                <% }) %>
+        </div>
+            <div class="icon"><i class="bi bi-search"></i></div>
+        </div>
+    </div>
+</div>
+
+<script src="/javascripts/nom.js"></script>
